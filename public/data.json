@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "David Kim",
-    "picture": "https://ibb.co.com/zVFbdK3p",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "david.kim@example.com",
     "days_since_contact": 62,
     "status": "almost due",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Emma Wilson",
-    "picture": "https://ibb.co.com/zVFbdK3phttps://ibb.co.com/zVFbdK3p",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "emma.wilson@example.com",
     "days_since_contact": 18,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Lisa Nakamura",
-    "picture": "https://ibb.co.com/zVFbdK3p",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "lisa.nakamura@example.com",
     "days_since_contact": 75,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "James Wright",
-    "picture": "https://ibb.co.com/zVFbdK3p",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "james.wright@example.com",
     "days_since_contact": 9,
     "status": "on-track",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Sofia Martinez",
-    "picture": "https://ibb.co.com/zVFbdK3p",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "sofia.martinez@example.com",
     "days_since_contact": 44,
     "status": "almost due",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Noah Patel",
-    "picture": "https://example.com/photos/noah_patel.jpg",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "noah.patel@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Aisha Rahman",
-    "picture": "https://example.com/photos/aisha_rahman.jpg",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "aisha.rahman@example.com",
     "days_since_contact": 120,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Ethan Brown",
-    "picture": "https://example.com/photos/ethan_brown.jpg",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "ethan.brown@example.com",
     "days_since_contact": 27,
     "status": "almost due",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Mia Chen",
-    "picture": "https://example.com/photos/mia_chen.jpg",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "mia.chen@example.com",
     "days_since_contact": 14,
     "status": "on-track",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Oliver Johansson",
-    "picture": "https://example.com/photos/oliver_johansson.jpg",
+    "picture": "https://i.pinimg.com/736x/c6/09/0d/c6090df18193e2616a6a32076883b70c.jpg",
     "email": "oliver.johansson@example.com",
     "days_since_contact": 33,
     "status": "almost due",

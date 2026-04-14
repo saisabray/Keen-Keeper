@@ -1,5 +1,7 @@
 import React, { use } from "react";
 import NavBtn from "./NavBtn";
+import Logo from '../../assets/images/logo.png'
+import Image from "next/image";
 
 
 
@@ -12,7 +14,7 @@ const Navbar = () => {
     { name: "Stats", path: "/stats" },
   ];
   return (
-    <div className="navbar bg-base-100 shadow-sm ">
+    <div className="navbar bg-base-100 py-3 shadow-sm ">
       <div className="w-11/12 mx-auto flex justify-between">
         <div className="navbar-start flex items-center ">
           <div className="dropdown">
@@ -35,9 +37,7 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <a className="text-2xl font-semibold text-[#244d3f]">
-              <span className="font-extrabold text-[#1f2937]">Keen</span>keeper
-            </a>
+            <Image src={Logo} alt="logo" width={200} height={200} />
           </div>
         </div>
         <div className="navbar-end flex-row gap-5">

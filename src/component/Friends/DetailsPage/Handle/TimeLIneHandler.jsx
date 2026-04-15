@@ -8,10 +8,11 @@ const TimeLineHandler = ({ friend, icon, text, bg }) => {
 
   const handleTimeLine = () => {
     const alreadyExisted = timeLine.find(
-      (item) => item.id === friend.id && item.action === text,
+      (item) => item.id === friend.id && item.action === text.toLowerCase()
     );
 
     if (alreadyExisted) {
+      alert("This action already exists in the timeline.");
       return;
     }
 
@@ -19,7 +20,7 @@ const TimeLineHandler = ({ friend, icon, text, bg }) => {
       ...timeLine,
       {
         ...friend,
-        action: text,
+        action: text.toLowerCase(),
         icon: icon,
         date: new Date().toISOString(),
       },

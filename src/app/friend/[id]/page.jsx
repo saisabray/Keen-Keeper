@@ -1,5 +1,5 @@
-import DetailsPageCol1 from "@/component/DetailsPage/Col-1/DetailsPageCol1";
-import DetailsPageCol2 from "@/component/DetailsPage/Col-2/DetailsPageCol2";
+import DetailsPageCol1 from "@/component/Friends/DetailsPage/Col-1/DetailsPageCol1";
+import DetailsPageCol2 from "@/component/Friends/DetailsPage/Col-2/DetailsPageCol2";
 
 const FetchFriends = async () => {
   const res = await fetch("http://localhost:3000/data.json", {

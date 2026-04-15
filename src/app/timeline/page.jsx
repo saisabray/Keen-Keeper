@@ -4,20 +4,40 @@ import { TimeLineContext } from "@/context/timeLineContext";
 
 const TimeLinePage = () => {
   const { timeLine } = useContext(TimeLineContext);
-
-
+  const [filter, setFilter] = useState("all");
+  console.log(filter, "filter");
+  const filteredTimeLine =
+    filter === "all"
+      ? timeLine
+      : timeLine.filter(
+          (item) => item.action.toLowerCase() == filter.toLowerCase(),
+        );
+  console.log(filteredTimeLine, "filteredTimeLine");
   return (
     <div className="container mx-auto min-h-screen my-15 ">
       <h1 className="text-[48px] text-[#1F2937] font-bold">Timeline</h1>
-
+      <div
+        className={`mt-10 mb-5 ${timeLine.length === 0 ? "hidden" : "flex"}`}
+      >
+        <select
+          value={filter}
+          onChange={(e) => setFilter(e.target.value)}
+          className="select border-0 select-sm w-auto bg-gray-200 text-base pr-10"
+        >
+          <option value="all">All</option>
+          <option value="call">Call</option>
+          <option value="video">Video</option>
+          <option value="text">Text</option>
+        </select>
+      </div>
       <div className="bg-gray-200 p-5 rounded-xl">
-        {timeLine.length === 0 ? (
+        {filteredTimeLine.length === 0 ? (
           <div className="bg-gray-200 h-[50vh] rounded-2xl mt-5 flex items-center justify-center">
             <p className="text-4xl font-bold text-black">No activity yet</p>
           </div>
         ) : (
           <div className="flex flex-col gap-5 mt-5">
-            {timeLine.map((item) => (
+            {filteredTimeLine.map((item) => (
               <div
                 key={item.id}
                 className="p-4 shadow-sm bg-white rounded-2xl flex gap-5"
@@ -28,8 +48,10 @@ const TimeLinePage = () => {
 
                 <div className="flex flex-col gap-2">
                   <h4 className="text-[20px] font-medium">
-                    <span className="font-bold">{item.action} </span> with
-                    &nbsp;
+                    <span className="font-bold">
+                      {item.action?.toUpperCase()}
+                    </span>{" "}
+                    with &nbsp;
                     {item.name}
                   </h4>
 

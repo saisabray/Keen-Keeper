@@ -15,7 +15,7 @@ const FriendDetailsPage = async ({ params }) => {
 
   console.log(id, "id");
   return (
-    <div className="mt-10 container mx-auto grid grid-cols-12 gap-8">
+    <div className="mt-20 container mx-auto grid grid-cols-12 gap-8  ">
       <div className="col-span-4">
         <DetailsPageCol1 friend={friend} />
       </div>

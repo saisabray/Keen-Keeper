@@ -4,7 +4,7 @@ import { RiHome2Line } from "react-icons/ri";
 import { IoTimeOutline } from "react-icons/io5";
 import { TfiStatsUp } from "react-icons/tfi";
 import { useContext } from "react";
-import { PathNameContext } from "@/context/context";
+import { PathNameContext } from "@/context/pathNameContext";
 
 const icons = {
   "/": RiHome2Line,
@@ -14,6 +14,10 @@ const icons = {
 const NavBtn = ({ item }) => {
   const pathName = useContext(PathNameContext);
   const Icon = icons[item.path];
+  const isDetailsPage = pathName.startsWith("/friend/");
+  if (item.path === "/" && isDetailsPage) {
+    return null;
+  }
   return (
     <Link
       href={item.path}

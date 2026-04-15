@@ -2,10 +2,7 @@ import React, { use } from "react";
 import NavBtn from "./NavBtn";
 import Logo from '../../assets/images/logo.png'
 import Image from "next/image";
-
-
-
-
+import Link from "next/link";
 
 const Navbar = () => {
   const navItems = [
@@ -37,7 +34,9 @@ const Navbar = () => {
             </div>
           </div>
           <div>
-            <Image src={Logo} alt="logo" width={200} height={200} />
+            <Link href='/'>
+              <Image src={Logo} alt="logo" width={200} height={200} />
+            </Link>
           </div>
         </div>
         <div className="navbar-end flex-row gap-5">

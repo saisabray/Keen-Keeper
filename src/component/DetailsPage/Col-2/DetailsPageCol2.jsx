@@ -2,6 +2,7 @@ import BannerStats from "@/component/Banner/Stats";
 import React from "react";
 import { FaRegMessage } from "react-icons/fa6";
 import { IoCallOutline, IoVideocamOutline } from "react-icons/io5";
+import TimeLineHandler from "../Handle/TimeLIneHandler";
 
 const DetailsPageCol2 = ({ friend }) => {
   return (
@@ -31,9 +32,9 @@ const DetailsPageCol2 = ({ friend }) => {
       <div className="bg-white p-10 rounded-2xl shadow-sm">
         <h3>Ouick Check In</h3>
         <div className="grid grid-cols-3 gap-8 mt-5">
-          <BannerStats value={<IoCallOutline />} title="Call" bg='bg'/>
-          <BannerStats value={<FaRegMessage />} title="Text" bg='bg' />
-          <BannerStats value={<IoVideocamOutline />} title="Video" bg='bg' />
+          <TimeLineHandler friend={friend} icon={<IoCallOutline />} text="Call" bg='bg'/>
+          <TimeLineHandler friend={friend} icon={<FaRegMessage />} text="Text" bg='bg'/>
+          <TimeLineHandler friend={friend} icon={<IoVideocamOutline />} text="Video" bg='bg'/>
         </div>
       </div>
     </div>

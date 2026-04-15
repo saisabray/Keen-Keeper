@@ -2,17 +2,18 @@
 import BannerStats from "@/component/Banner/Stats";
 import React, { useContext } from "react";
 import { TimeLineContext } from "@/context/timeLineContext";
+import { toast } from "react-toastify";
 
 const TimeLineHandler = ({ friend, icon, text, bg }) => {
   const { timeLine, setTimeLine } = useContext(TimeLineContext);
 
   const handleTimeLine = () => {
     const alreadyExisted = timeLine.find(
-      (item) => item.id === friend.id && item.action === text.toLowerCase()
+      (item) => item.id === friend.id && item.action === text.toLowerCase(),
     );
 
     if (alreadyExisted) {
-      alert("This action already exists in the timeline.");
+      toast.error(`${text}already exists in timeline!`);
       return;
     }
 
@@ -25,6 +26,7 @@ const TimeLineHandler = ({ friend, icon, text, bg }) => {
         date: new Date().toISOString(),
       },
     ]);
+    toast.success(`${text} added to timeline!`);
   };
 
   return (

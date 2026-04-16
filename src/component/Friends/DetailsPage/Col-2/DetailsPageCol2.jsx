@@ -6,8 +6,8 @@ import TimeLineHandler from "../Handle/TimeLIneHandler";
 
 const DetailsPageCol2 = ({ friend }) => {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="grid grid-cols-3 gap-8">
+    <div className="flex flex-col  gap-5">
+      <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-8">
         <BannerStats
           value={friend.days_since_contact}
           title="Days Since Contact"
@@ -29,9 +29,9 @@ const DetailsPageCol2 = ({ friend }) => {
           </p>
         </div>
       </div>
-      <div className="bg-white p-10 rounded-2xl shadow-sm">
-        <h3>Ouick Check In</h3>
-        <div className="grid grid-cols-3 gap-8 mt-5">
+      <div className="bg-white p-10 my-5 md:my-0 rounded-2xl shadow-sm">
+          <h3 className="text-black font-medium text-2xl">Quick Check In</h3>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
           <TimeLineHandler friend={friend} icon={<IoCallOutline />} text="Call" bg='bg'/>
           <TimeLineHandler friend={friend} icon={<FaRegMessage />} text="Text" bg='bg'/>
           <TimeLineHandler friend={friend} icon={<IoVideocamOutline />} text="Video" bg='bg'/>

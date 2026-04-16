@@ -14,8 +14,8 @@ const TimeLinePage = () => {
         );
   console.log(filteredTimeLine, "filteredTimeLine");
   return (
-    <div className="container mx-auto min-h-screen my-15 ">
-      <h1 className="text-[48px] text-[#1F2937] font-bold">Timeline</h1>
+    <div className="container mx-auto h-full md:min-h-screen p-2 md:p-0 my-5 md:my-15 ">
+      <h1 className="text-2xl md:text-3xl  lg:text-[48px] text-[#1F2937] mb-4 font-bold">Timeline</h1>
       <div
         className={`mt-10 mb-5 ${timeLine.length === 0 ? "hidden" : "flex"}`}
       >
@@ -33,7 +33,7 @@ const TimeLinePage = () => {
       <div className="bg-gray-200 p-5 rounded-xl">
         {filteredTimeLine.length === 0 ? (
           <div className="bg-gray-200 h-[50vh] rounded-2xl mt-5 flex items-center justify-center">
-            <p className="text-4xl font-bold text-black">No activity yet</p>
+            <p className="md:text-4xl font-bold text-black">No activity yet</p>
           </div>
         ) : (
           <div className="flex flex-col gap-5 mt-5">

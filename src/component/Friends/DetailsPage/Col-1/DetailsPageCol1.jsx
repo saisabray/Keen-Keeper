@@ -9,13 +9,15 @@ const DetailsPageCol1 = ({ friend }) => {
     <div className="flex flex-col gap-5 ">
       <div className="card bg-base-100 py-3  shadow-sm">
         <figure className="px-10 pt-10">
-          <Image
-            src={friend.picture}
-            alt={friend.name}
-            width={80}
-            height={80}
-            className="rounded-full"
-          />
+          <div className="w-24 h-24 rounded-full overflow-hidden">
+            <Image
+              src={friend.picture}
+              alt={friend.name}
+              width={100}
+              height={100}
+              className="w-full h-full object-cover object-center"
+            />
+          </div>
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title text-[20px] text-[#1f2937] font-semibold">

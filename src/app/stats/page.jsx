@@ -32,12 +32,12 @@ const DashboardPage = () => {
   };
   const data = getChartData(counts);
   return (
-    <div className="container mx-auto my-15 ">
-      <h2 className="text-[48px] text-[#1F2937] font-bold">
+    <div className="container mx-auto h-full md:min-h-screen my-5 md:my-15 p-3 md:p-0 ">
+      <h2 className="text-2xl md:text-3xl lg:text-[48px] text-[#1F2937] font-bold">
         Friendship Analytics
       </h2>
 
-      <div className=" my-10 shadow-sm p-10 rounded-xl bg-white">
+      <div className="my-5 md:my-10 shadow-sm p-5 md:p-10 rounded-xl bg-white">
         <h4 className="font-medium text-2xl text-[#244D3F]">
           By Interaction Type
         </h4>

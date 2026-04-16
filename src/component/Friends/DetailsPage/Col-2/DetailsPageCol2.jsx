@@ -30,11 +30,26 @@ const DetailsPageCol2 = ({ friend }) => {
         </div>
       </div>
       <div className="bg-white p-10 my-5 md:my-0 rounded-2xl shadow-sm">
-          <h3 className="text-black font-medium text-2xl">Quick Check In</h3>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
-          <TimeLineHandler friend={friend} icon={<IoCallOutline />} text="Call" bg='bg'/>
-          <TimeLineHandler friend={friend} icon={<FaRegMessage />} text="Text" bg='bg'/>
-          <TimeLineHandler friend={friend} icon={<IoVideocamOutline />} text="Video" bg='bg'/>
+        <h3 className="text-black font-medium text-2xl">Quick Check In</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-5">
+          <TimeLineHandler
+            friend={friend}
+            icon={<IoCallOutline />}
+            text="Call"
+            bg="bg"
+          />
+          <TimeLineHandler
+            friend={friend}
+            icon={<FaRegMessage />}
+            text="Text"
+            bg="bg"
+          />
+          <TimeLineHandler
+            friend={friend}
+            icon={<IoVideocamOutline />}
+            text="Video"
+            bg="bg"
+          />
         </div>
       </div>
     </div>

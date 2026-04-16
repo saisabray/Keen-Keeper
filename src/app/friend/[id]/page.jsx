@@ -33,7 +33,7 @@ const FriendDetailsPage = async ({ params }) => {
 
   console.log(id, "id");
   return (
-    <div className="mt-5 md:mt-20 container mx-auto grid grid-cols-12 gap-8  ">
+    <div className="mt-5 md:my-10 lg:mt-20 container mx-auto grid grid-cols-12 gap-8  ">
       <div className="col-span-12 p-2 md:p-0 md:col-span-4 ">
         <DetailsPageCol1 friend={friend} />
       </div>

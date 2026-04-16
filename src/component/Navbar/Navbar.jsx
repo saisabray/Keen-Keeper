@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="navbar bg-base-100 py-3 shadow-sm ">
       <div className="w-11/12 mx-auto flex justify-between">
         <div className="navbar-start flex items-center ">
-          <div className="dropdown">
+          <div className="dropdown md:hidden">
            
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg

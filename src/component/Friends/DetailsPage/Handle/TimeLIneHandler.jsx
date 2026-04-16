@@ -20,13 +20,12 @@ const TimeLineHandler = ({ friend, icon, text, bg }) => {
       return;
     }
 
-   const newEntry = {
-     ...friend,
-     action,
-     icon,
-     date: new Date(),
-   };
-
+    const newEntry = {
+      ...friend,
+      action,
+      icon,
+      date: new Date(),
+    };
 
     setTimeLine([...timeLine, newEntry]);
 
@@ -36,12 +35,20 @@ const TimeLineHandler = ({ friend, icon, text, bg }) => {
   return (
     <div
       onClick={handleTimeLine}
-      className={`card ${bg ? "bg-gray-100  px-30 active:scale-101" : "bg-base-100"} shadow-sm p-10 rounded-2xl flex flex-col items-center gap-3
-      ${pathName === "/" ? "hover:scale-105 transition-transform duration-300 ease-in" : ""}`}
+      className={`card 
+  ${bg ? "bg-gray-100" : "bg-base-100"} 
+  shadow-sm p-5 sm:p-6 md:p-8 
+  rounded-2xl flex flex-col items-center justify-center 
+  gap-2 sm:gap-3 
+  w-full
+  active:scale-95 transition-transform duration-200 cursor-pointer
+`}
     >
-      <p className="stat-value text-[#244D3F] font-medium text-3xl ">{text}</p>
+      <p className="text-[#244D3F] font-medium text-xl sm:text-2xl md:text-3xl">
+        {text}
+      </p>
 
-      <div className="stat-title text-[#64748b] font-semibold text-3xl">
+      <div className="text-[#64748b] text-2xl sm:text-3xl md:text-4xl">
         {icon}
       </div>
     </div>
